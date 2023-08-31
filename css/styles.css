@@ -9,9 +9,12 @@
   margin-top: 25px;
   margin-left: 25px;
 }
+.container .navBar .logo img {
+  border-radius: 20px;
+}
 .container .navBar .navItem {
   color: #8A8F9D;
-  font-size: 60%;
+  font-size: 100%;
 }
 
 /*head nav bar. including search bar and dates*/

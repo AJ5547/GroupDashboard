@@ -9,9 +9,12 @@
         height: 95vh;
         margin-top: 25px;
         margin-left: 25px;
+        .logo img {
+            border-radius: variables.$main-rounded-corners;
+        }
         .navItem {
         color: variables.$secondary-item-grey;
-        font-size: 60%;
+        font-size: 100%;
     }
 }
 
