@@ -1,11 +1,15 @@
  @use 'variables';
- @use 'generalLayout.scss'
+ @use 'generalLayout.scss';
  body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     background-color: variables.$main-background-color;
+    
+}
+.navBar {
+    @extend %sidebar;
 }
 .container {
 

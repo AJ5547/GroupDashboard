@@ -1,3 +1,20 @@
+/*side bar*/
+.navBar {
+  width: 10%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.navBar .navItem {
+  color: #8A8F9D;
+}
+.navBar .navItem .navBlueItem {
+  color: #3762ED;
+}
+
+/*head nav bar. including search bar and dates*/
+/*basic flag box structure*/
 body {
   margin: 0;
   padding: 0;
