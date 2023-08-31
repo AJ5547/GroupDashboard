@@ -1,16 +1,16 @@
 /*side bar*/
 @use 'variables';
 %sidebar{
-        width: 10%;
+        width: 15%;
         background-color: white;
         display: flex;
         flex-direction: column;
         border-radius: variables.$main-rounded-corners;
+        height: 100%;
+        
         .navItem {
         color: variables.$secondary-item-grey;
-        .navBlueItem {
-            color: variables.$main-blue;
-        }
+        font-size: 60%;
     }
 }
 

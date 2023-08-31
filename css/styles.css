@@ -1,16 +1,15 @@
 /*side bar*/
 .navBar {
-  width: 10%;
+  width: 15%;
   background-color: white;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
+  height: 100%;
 }
 .navBar .navItem {
   color: #8A8F9D;
-}
-.navBar .navItem .navBlueItem {
-  color: #3762ED;
+  font-size: 60%;
 }
 
 /*head nav bar. including search bar and dates*/
@@ -21,4 +20,14 @@ body {
   width: 100%;
   height: 100%;
   background-color: #E2E4E9;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+}
+.container .dashboard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=styles.css.map */
