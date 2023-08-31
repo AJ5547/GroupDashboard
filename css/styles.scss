@@ -6,13 +6,15 @@
     width: 100%;
     height: 100%;
     background-color: variables.$main-background-color;
-}
-.navBar {
-    @extend %sidebar;
+    ;
 }
 .container {
-    width: 80%;
 display: flex;
+flex-direction: row;
+width: 100%;
+    .navBar {
+        @extend %sidebar;
+    }
  .dashboard {
     width: 100%;
     display: flex;

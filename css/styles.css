@@ -1,13 +1,15 @@
 /*side bar*/
-.navBar {
+.container .navBar {
   width: 15%;
   background-color: white;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  height: 100%;
+  height: 95vh;
+  margin-top: 25px;
+  margin-left: 25px;
 }
-.navBar .navItem {
+.container .navBar .navItem {
   color: #8A8F9D;
   font-size: 60%;
 }
@@ -53,8 +55,9 @@ body {
 }
 
 .container {
-  width: 80%;
   display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 .container .dashboard {
   width: 100%;
