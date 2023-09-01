@@ -11,24 +11,27 @@
   justify-content: start;
   align-items: center;
 }
+.container .navBar .logo {
+  margin-top: 25px;
+  height: 5%;
+}
 .container .navBar .logo img {
   border-radius: 20px, 0px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 40%;
-  margin-top: 25px;
+  height: 100%;
 }
 .container .navBar .navBar {
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .container .navBar .navItem {
   color: #8A8F9D;
   font-size: 100%;
-gap: 20px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
   margin-top: 20px;
 }
 
@@ -102,6 +105,13 @@ body {
   margin-top: 5px;
   padding: 0;
 }
+.container .hero {
+  width: 100%;
+}
+.container .hero img {
+  width: 100%;
+}
+
 .mainContent {
   display: flex;
   flex-flow: row wrap;

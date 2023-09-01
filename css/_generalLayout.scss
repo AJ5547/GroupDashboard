@@ -9,23 +9,30 @@
         height: 100vh;
         border-right: variables.$main-border;
         margin-top: 25px;
-        justify-content: space-between;
+        justify-content: start;
         align-items: center;
-        .logo img {
+        .logo { 
+            margin-top: 25px;
+            height: 5%;
+            img {
             border-radius: variables.$main-rounded-corners, 0px;
             object-fit: cover;
-            height: 40%;
-            margin-top: 25px;
+            height: 100%;
+            }
         }
         .navBar{
             display:flex;
             flex-flow: column wrap;
-            justify-content: space-around;
+            justify-content: space-between;
 
         }
         .navItem {
         color: variables.$secondary-item-grey;
         font-size: 100%;
+        display: variables.$display;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
     }
 }
 
