@@ -1,6 +1,6 @@
 /*side bar*/
 .container .navBar {
-  width: 5%;
+  width: 8%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -67,6 +67,7 @@ body {
   width: 80%;
   flex-flow: column wrap;
   margin-left: 25px;
+  background-color: white;
 }
 .container .dashboard .row {
   display: flex;

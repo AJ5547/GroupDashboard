@@ -19,6 +19,7 @@ width: variables.$hundred;
     width: variables.$mainContentWidth;
     flex-flow: variables.$column;
     margin-left: 25px;
+    background-color: white;
     .row{
         display: variables.$display;
         flex-flow: variables.$row;
