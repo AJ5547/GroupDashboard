@@ -85,7 +85,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: large;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 body {
@@ -96,6 +96,7 @@ body {
   background-color: #d1d4d9;
   display: flex;
   justify-content: center;
+  font-family: sans-serif;
 }
 
 .container {
@@ -125,7 +126,7 @@ body {
 .mainContent {
   display: flex;
   flex-flow: row wrap;
-  width: 91.9%;
+  width: 91.5%;
   justify-content: center;
 }
 
