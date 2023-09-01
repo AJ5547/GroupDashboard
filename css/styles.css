@@ -32,7 +32,7 @@
   flex-direction: column;
   gap: 20px;
   margin-top: 20px;
->>>>>>> refs/remotes/origin/main
+  align-items: center;
 }
 
 /*head nav bar. including search bar and dates*/
@@ -74,6 +74,7 @@
   flex-flow: column wrap;
   margin: 0;
   margin-bottom: 25px;
+  border-radius: 0px 20px 0px 0px;
   padding: 20px 20px 0 0;
   background-color: white;
   border-bottom: 1px lightgrey solid;
@@ -87,10 +88,10 @@
   font-weight: 500;
 }
 .container .dashboard .row .blueBorderClass {
-  border-bottom: 1px #3762ED solid;
+  border-bottom: 2px #3762ED solid;
 }
 .container .dashboard .row .dashItem {
-  padding: 0px 20px 10px 20px;
+  padding: 0px 20px 2px 20px;
   margin: 0;
 }
 .container .dashboard .row:nth-child(1) {
@@ -136,7 +137,7 @@ body {
 .mainContent {
   display: flex;
   flex-flow: row wrap;
-  width: 91.5%;
+  width: 91.9%;
   justify-content: center;
 }
 
@@ -180,6 +181,6 @@ a {
 }
 
 .row .blueBorderClass {
-  border-bottom: 1px #3762ED solid;
+  border-bottom: 2px #3762ED solid;
   padding: 20px;
 }/*# sourceMappingURL=styles.css.map */
