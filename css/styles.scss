@@ -22,7 +22,14 @@ body {
   }
   .dashboard {
     @extend %dashboardMain;
+    
   }
+  .hero {
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
 }
 .mainContent {
   display: variables.$display;
