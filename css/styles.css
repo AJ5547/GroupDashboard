@@ -60,7 +60,7 @@
 .container .dashboard {
   width: 100%;
   flex-flow: column wrap;
-  margin: 35px 0 15px 0;
+  margin: 25px 0 15px 0;
   padding: 20px;
   background-color: white;
 }
@@ -76,13 +76,16 @@ body {
   padding: 0px;
   width: 100%;
   height: 100%;
-  background-color: #E2E4E9;
+  background-color: #d1d4d9;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
   display: flex;
+  background-color: #E2E4E9;
   flex-flow: row wrap;
-  width: 100%;
+  width: 90%;
 }
 .mainContent {
   display: flex;
