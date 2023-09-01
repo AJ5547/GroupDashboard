@@ -99,9 +99,9 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 91.9%;
   display: flex;
-  background-color: #E2E4E9;
+  background-color: #EEF0F4;
   flex-flow: row wrap;
   margin: 0;
   margin-top: 5px;
@@ -117,7 +117,7 @@ body {
 .mainContent {
   display: flex;
   flex-flow: row wrap;
-  width: 90%;
+  width: 91.9%;
   justify-content: center;
 }
 
