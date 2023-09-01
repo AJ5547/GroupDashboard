@@ -8,6 +8,7 @@ body {
   background-color: variables.$bodyBackGround;
   display: variables.$display;
   justify-content: center;
+  font-family: sans-serif;
 }
 .container {
     width: variables.$ninety;
@@ -26,16 +27,24 @@ body {
     
   }
   .hero {
+    display:variables.$display;
+    flex-flow: variables.$row;
+    align-items: variables.$center;
+    justify-content: space-around;
     width: 100%;
+    margin-bottom: 20px;
+    svg{
+        height:100%;
+    }
     img {
-        width: 100%;
+        width: 80%;
     }
 }
 }
 .mainContent {
   display: variables.$display;
   flex-flow: variables.$row;
-  width: variables.$ninety;
+  width: 91.5%;
   justify-content: variables.$center;
 }
 .left,
@@ -59,7 +68,7 @@ body {
       font-size: large;
       width: variables.$hundred;
       border-bottom: variables.$main-border;
-      justify-content: center;
+      justify-content: variables.$center;
     }
   .cardLeft,
   .cardRight {
