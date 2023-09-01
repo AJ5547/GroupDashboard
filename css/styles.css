@@ -8,9 +8,10 @@
   height: 95vh;
   margin-top: 25px;
   justify-content: space-between;
+  align-items: center;
 }
 .container .navBar .logo img {
-  border-radius: 20px;
+  border-radius: 20px, 0px;
 }
 .container .navBar .navBar {
   display: flex;
@@ -56,9 +57,10 @@
 
 /*dashboard extension*/
 .container .dashboard {
-  width: 80%;
+  width: 100%;
   flex-flow: column wrap;
-  margin-left: 25px;
+  margin: 35px 0 15px 0;
+  padding: 20px;
   background-color: white;
 }
 .container .dashboard .row {
@@ -86,6 +88,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   width: 80%;
+  justify-content: center;
 }
 
 .left, .right {
@@ -95,10 +98,10 @@ body {
 .shortCard {
   display: flex;
   flex-flow: row wrap;
-  background-color: #f0f3ff;
+  background-color: #FFFFFF;
   margin: 0px;
   padding: 0px;
-  width: 50%;
+  width: 70%;
 }
 .shortCard .cardLeft, .shortCard .cardRight {
   display: flex;
