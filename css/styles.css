@@ -31,7 +31,7 @@
 /*head nav bar. including search bar and dates*/
 /*basic flag box structure*/
 .matchesRow {
-  width: 70%;
+  width: 90%;
   background: white;
   display: flex;
   flex-flow: row nowrap;
@@ -51,7 +51,8 @@
   padding: 8px;
   border-radius: 5px;
 }
-.matchesRow .live > a, .matchesRow .soon > a {
+.matchesRow .live > a,
+.matchesRow .soon > a {
   text-decoration: none;
 }
 .matchesRow .score {
@@ -64,7 +65,9 @@
 .container .dashboard {
   width: 100%;
   flex-flow: column wrap;
-  margin: 25px 0 15px 0;
+  margin: 0;
+  margin-bottom: 25px;
+  margin-top: 25px;
   padding: 20px;
   background-color: white;
   border-bottom: 1px lightgrey solid;
@@ -74,12 +77,11 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 35px 0 15px 0;
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
   background-color: #d1d4d9;
@@ -88,19 +90,23 @@ body {
 }
 
 .container {
+  width: 90%;
   display: flex;
   background-color: #E2E4E9;
   flex-flow: row wrap;
-  width: 90%;
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
 }
 .mainContent {
   display: flex;
   flex-flow: row wrap;
-  width: 80%;
+  width: 90%;
   justify-content: center;
 }
 
-.left, .right {
+.left,
+.right {
   width: 45%;
 }
 
@@ -108,16 +114,18 @@ body {
   display: flex;
   flex-flow: row wrap;
   background-color: #FFFFFF;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: 70%;
 }
-.shortCard .cardLeft, .shortCard .cardRight {
+.shortCard .cardLeft,
+.shortCard .cardRight {
   display: flex;
   flex-flow: column;
   margin: 15px;
 }
-.shortCard .cardLeft .cardHeading, .shortCard .cardRight .cardHeading {
+.shortCard .cardLeft .cardHeading,
+.shortCard .cardRight .cardHeading {
   font-size: large;
   margin: 10px;
 }
