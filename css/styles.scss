@@ -32,7 +32,9 @@ body {
 }
 .left,
 .right {
-  width: 45%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 .shortCard {
   display: variables.$display;
@@ -41,16 +43,19 @@ body {
   margin: variables.$pZero;
   padding: variables.$pZero;
   width: 70%;
-  margin-bottom: 25px;
+  margin-bottom: 25px; 
+  .cardHeading {
+    margin:0;
+    padding:0;
+    display: flex;
+      font-size: large;
+      width: variables.$hundred;
+      border-bottom: variables.$main-border;
+      justify-content: center;
+    }
   .cardLeft,
   .cardRight {
-    display: variables.$display;
-    flex-flow: column;
     margin: 15px;
-    .cardHeading {
-      font-size: large;
-      margin: 10px;
-    }
   }
 }
 a {
