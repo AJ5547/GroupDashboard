@@ -54,3 +54,8 @@ a{
 .matchesRow{
     @extend %matchesBox;
 }
+/*maybe mixin?*/
+.active {
+    border-bottom: variables.$main-blue;
+    color: variables.$main-blue;
+}

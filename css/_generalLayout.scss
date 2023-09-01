@@ -8,7 +8,6 @@
         border-radius: variables.$main-rounded-corners;
         height: 95vh;
         margin-top: 25px;
-        margin-left: 25px;
         justify-content: space-between;
         align-items: center;
         .logo img {
@@ -71,5 +70,6 @@ background-color: white;
         flex-flow: variables.$row;
         justify-content: space-between;
         align-items: variables.$center;
+        margin: 35px 0 15px 0;
     }
 }
