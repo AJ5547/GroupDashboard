@@ -15,8 +15,9 @@ body {
   background-color: variables.$main-background-color;
   flex-flow: variables.$row;
   margin: variables.$pZero;
-  margin-top: 5px;
+  margin-top: 35px;
   padding: variables.$pZero;
+  border-radius: variables.$main-rounded-corners;
   .navBar {
     @extend %sidebar;
   }
@@ -72,7 +73,11 @@ a {
   @extend %matchesBox;
 }
 /*maybe mixin?*/
-.active {
-  border-bottom: variables.$main-blue;
+.dashItem .active {
+  
   color: variables.$main-blue;
+}
+.row .blueBorderClass {
+border-bottom: variables.$blue-border;
+padding: 20px;
 }
