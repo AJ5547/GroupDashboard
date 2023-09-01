@@ -1,31 +1,39 @@
  @use 'variables';
  @use 'generalLayout.scss';
  body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+    margin: variables.$pZero;
+    padding: variables.$pZero;
+    width: variables.$hundred;
+    height: variables.$hundred;
     background-color: variables.$main-background-color;
     ;
 }
 .container {
-display: flex;
-flex-direction: row;
-width: 100%;
+// display: variables.$display;
+// flex-flow: variables.$row;
+width: variables.$hundred;
     .navBar {
         @extend %sidebar;
     }
  .dashboard {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    width: variables.$mainContentWidth;
+    flex-flow: variables.$column;
+    .row{
+        display: variables.$display;
+        flex-flow: variables.$row;
+        justify-content: space-between;
+        align-items: variables.$center;
+    }
  }
 }
-a{
-    text-decoration: none
+.mainContent{
+    display: variables.$display;
+    flex-flow: variables.$column;
+    width: variables.$mainContentWidth;
 }
-.matchesRow{
-    @extend %matchesBox;
+.left{
+    display:variables.$display;
+    flex-flow: variables.$row;
 }
 a{
     text-decoration: none
