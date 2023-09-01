@@ -41,8 +41,15 @@ width: variables.$hundred;
     background-color: variables.$scoreBackground;
     margin: variables.$pZero;
     padding: variables.$pZero;
+    width: 50%;
     .cardLeft, .cardRight{
+        display: variables.$display;
+        flex-flow:column;
         margin: 15px;
+            .cardHeading{
+            font-size: large;
+            margin: 10px;
+            }
         
     }
 }
