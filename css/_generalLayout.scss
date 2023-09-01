@@ -10,8 +10,9 @@
         margin-top: 25px;
         margin-left: 25px;
         justify-content: space-between;
+        align-items: center;
         .logo img {
-            border-radius: variables.$main-rounded-corners;
+            border-radius: variables.$main-rounded-corners, 0px;
         }
         .navBar{
             display:flex;

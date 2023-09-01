@@ -16,9 +16,10 @@ width: variables.$hundred;
         @extend %sidebar;
     }
  .dashboard {
-    width: variables.$mainContentWidth;
+    width: variables.$hundred;
     flex-flow: variables.$column;
     margin-left: 25px;
+    margin-bottom:40px;
     .row{
         display: variables.$display;
         flex-flow: variables.$row;
@@ -31,6 +32,7 @@ width: variables.$hundred;
     display: variables.$display;
     flex-flow: variables.$row;
     width: variables.$mainContentWidth;
+    justify-content: variables.$center;
 }
 .left, .right{
     width:45%;
@@ -38,10 +40,10 @@ width: variables.$hundred;
 .shortCard{
     display:variables.$display;
     flex-flow: variables.$row;
-    background-color: variables.$scoreBackground;
+    background-color: variables.$whiteColor;
     margin: variables.$pZero;
     padding: variables.$pZero;
-    width: 50%;
+    width: 70%;
     .cardLeft, .cardRight{
         display: variables.$display;
         flex-flow:column;
