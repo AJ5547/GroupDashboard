@@ -84,6 +84,8 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  font-size: large;
+  font-weight: 600;
 }
 
 body {
@@ -131,6 +133,7 @@ body {
   margin: 0;
   padding: 0;
   width: 70%;
+  margin-bottom: 25px;
 }
 .shortCard .cardLeft,
 .shortCard .cardRight {
