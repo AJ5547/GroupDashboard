@@ -12,6 +12,7 @@
    display: variables.$display;
    flex-flow: variables.$row;
 width: variables.$hundred;
+
     .navBar {
         @extend %sidebar;
     }
@@ -50,4 +51,9 @@ a{
 }
 .matchesRow{
     @extend %matchesBox;
+}
+/*maybe mixin?*/
+.active {
+    border-bottom: variables.$main-blue;
+    color: variables.$main-blue;
 }
