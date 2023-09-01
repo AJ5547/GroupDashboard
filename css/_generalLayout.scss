@@ -60,9 +60,11 @@
     }
 }
 /*dashboard extension*/
-%dashboardMain {width: variables.$mainContentWidth;
+%dashboardMain {
+    width: variables.$hundred;
 flex-flow: variables.$column;
-margin-left: 25px;
+margin: 35px 0 15px 0;
+padding:20px;
 background-color: white;
     .row{
         display: variables.$display;

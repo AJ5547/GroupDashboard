@@ -58,9 +58,10 @@
 
 /*dashboard extension*/
 .container .dashboard {
-  width: 80%;
+  width: 100%;
   flex-flow: column wrap;
-  margin-left: 25px;
+  margin: 35px 0 15px 0;
+  padding: 20px;
   background-color: white;
 }
 .container .dashboard .row {
