@@ -1,7 +1,7 @@
 /*side bar*/
 @use 'variables';
 %sidebar{
-        width: 15%;
+        width: 5%;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -9,6 +9,7 @@
         height: 95vh;
         margin-top: 25px;
         margin-left: 25px;
+        justify-content: space-between;
         .logo img {
             border-radius: variables.$main-rounded-corners;
         }

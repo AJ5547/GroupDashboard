@@ -1,6 +1,6 @@
 /*side bar*/
 .container .navBar {
-  width: 15%;
+  width: 5%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -8,6 +8,7 @@
   height: 95vh;
   margin-top: 25px;
   margin-left: 25px;
+  justify-content: space-between;
 }
 .container .navBar .logo img {
   border-radius: 20px;
@@ -58,11 +59,14 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-flow: row wrap;
   width: 100%;
 }
 .container .dashboard {
-  width: 70%;
+  width: 80%;
   flex-flow: column wrap;
+  margin-left: 25px;
 }
 .container .dashboard .row {
   display: flex;
@@ -73,13 +77,23 @@ body {
 
 .mainContent {
   display: flex;
-  flex-flow: column wrap;
-  width: 70%;
+  flex-flow: row wrap;
+  width: 80%;
 }
 
-.left {
+.left, .right {
+  width: 45%;
+}
+
+.shortCard {
   display: flex;
   flex-flow: row wrap;
+  background-color: #f0f3ff;
+  margin: 0px;
+  padding: 0px;
+}
+.shortCard .cardLeft, .shortCard .cardRight {
+  margin: 15px;
 }
 
 a {
