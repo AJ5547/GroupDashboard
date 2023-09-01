@@ -1,61 +1,65 @@
- @use 'variables';
- @use 'generalLayout.scss';
- body {
-    margin: variables.$pZero;
-    padding: variables.$pZero;
-    width: variables.$hundred;
-    height: variables.$hundred;
-    background-color: variables.$bodyBackGround;
-    display: variables.$display;
-    justify-content: center;
+@use "variables";
+@use "generalLayout.scss";
+body {
+  margin: variables.$pZero;
+  padding: variables.$pZero;
+  width: variables.$hundred;
+  height: variables.$hundred;
+  background-color: variables.$bodyBackGround;
+  display: variables.$display;
+  justify-content: center;
 }
 .container {
-   display: variables.$display;
-   background-color: variables.$main-background-color;
-   flex-flow: variables.$row;
-width: variables.$ninety;
-    .navBar {
-        @extend %sidebar;
-    }
- .dashboard {
-   @extend %dashboardMain;
- }
+    width: variables.$ninety;
+  display: variables.$display;
+  background-color: variables.$main-background-color;
+  flex-flow: variables.$row;
+  margin: variables.$pZero;
+  margin-top: 5px;
+  padding: variables.$pZero;
+  .navBar {
+    @extend %sidebar;
+  }
+  .dashboard {
+    @extend %dashboardMain;
+  }
 }
-.mainContent{
+.mainContent {
+  display: variables.$display;
+  flex-flow: variables.$row;
+  width: variables.$ninety;
+  justify-content: variables.$center;
+}
+.left,
+.right {
+  width: 45%;
+}
+.shortCard {
+  display: variables.$display;
+  flex-flow: variables.$row;
+  background-color: variables.$whiteColor;
+  margin: variables.$pZero;
+  padding: variables.$pZero;
+  width: 70%;
+  .cardLeft,
+  .cardRight {
     display: variables.$display;
-    flex-flow: variables.$row;
-    width: variables.$mainContentWidth;
-    justify-content: variables.$center;
-}
-.left, .right{
-    width:45%;
-}
-.shortCard{
-    display:variables.$display;
-    flex-flow: variables.$row;
-    background-color: variables.$whiteColor;
-    margin: variables.$pZero;
-    padding: variables.$pZero;
-    width: 70%;
-    .cardLeft, .cardRight{
-        display: variables.$display;
-        flex-flow:column;
-        margin: 15px;
-            .cardHeading{
-            font-size: large;
-            margin: 10px;
-            }
-        
+    flex-flow: column;
+    margin: 15px;
+    .cardHeading {
+      font-size: large;
+      margin: 10px;
     }
+  }
 }
-a{
-    text-decoration: none
+a {
+  text-decoration: none;
 }
-.matchesRow{
-    @extend %matchesBox;
+.matchesRow {
+  @extend %matchesBox;
 }
 /*maybe mixin?*/
 .active {
-    border-bottom: variables.$main-blue;
-    color: variables.$main-blue;
+  border-bottom: variables.$main-blue;
+  color: variables.$main-blue;
 }

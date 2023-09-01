@@ -9,7 +9,7 @@
         height: 100vh;
         border-right: variables.$main-border;
         margin-top: 25px;
-        justify-content: start;
+        justify-content: space-between;
         align-items: center;
         .logo img {
             border-radius: variables.$main-rounded-corners, 0px;
@@ -26,58 +26,57 @@
         .navItem {
         color: variables.$secondary-item-grey;
         font-size: 100%;
-        gap: 20px;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
     }
-    }
+}
+
 /*head nav bar. including search bar and dates*/
 
 /*basic flag box structure*/
 
-%matchesBox{
-    width: 70%;
-    background:white;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10px;
-    border-radius: variables.$main-rounded-corners;
-    .live{
-        background-color:variables.$liveBackground;
-        padding: 8px;
-        border-radius: 5px;
-        color:white;
-    }
-    .soon{
-        background-color: variables.$scoreBackground;
-        padding: 8px;
-        border-radius: 5px;
-    }
-    .live>a, .soon>a{
-        text-decoration: none;
-    }
-    .score{
-        background-color: variables.$scoreBackground;
-        padding: 8px;
-        border-radius: 5px;
-    }
+%matchesBox {
+  width: 90%;
+  background: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  border-radius: variables.$main-rounded-corners;
+  .live {
+    background-color: variables.$liveBackground;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+  }
+  .soon {
+    background-color: variables.$scoreBackground;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  .live > a,
+  .soon > a {
+    text-decoration: none;
+  }
+  .score {
+    background-color: variables.$scoreBackground;
+    padding: 8px;
+    border-radius: 5px;
+  }
 }
 /*dashboard extension*/
 %dashboardMain {
-    width: variables.$hundred;
-flex-flow: variables.$column;
-margin: 25px 0 15px 0;
-padding:20px;
-background-color: white;
-border-bottom: variables.$main-border;
-    .row{
-        display: variables.$display;
-        flex-flow: variables.$row;
-        justify-content: space-between;
-        align-items: variables.$center;
-        margin: 35px 0 15px 0;
-    }
+  width: variables.$hundred;
+  flex-flow: variables.$column;
+  margin: 0;
+  margin-bottom: 25px;
+  margin-top:25px;
+  padding: 20px;
+  background-color: white;
+  border-bottom: variables.$main-border;
+  .row {
+    display: variables.$display;
+    flex-flow: variables.$row;
+    justify-content: space-between;
+    align-items: variables.$center;
+  }
 }
