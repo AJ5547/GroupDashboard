@@ -5,14 +5,15 @@
     padding: variables.$pZero;
     width: variables.$hundred;
     height: variables.$hundred;
-    background-color: variables.$main-background-color;
-    ;
+    background-color: variables.$bodyBackGround;
+    display: variables.$display;
+    justify-content: center;
 }
 .container {
    display: variables.$display;
+   background-color: variables.$main-background-color;
    flex-flow: variables.$row;
-width: variables.$hundred;
-
+width: variables.$ninety;
     .navBar {
         @extend %sidebar;
     }
