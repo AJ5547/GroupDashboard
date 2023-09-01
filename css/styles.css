@@ -56,6 +56,20 @@
   border-radius: 5px;
 }
 
+/*dashboard extension*/
+.container .dashboard {
+  width: 80%;
+  flex-flow: column wrap;
+  margin-left: 25px;
+  background-color: white;
+}
+.container .dashboard .row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -69,23 +83,6 @@ body {
   flex-flow: row wrap;
   width: 100%;
 }
-.container .dashboard {
-  width: 100%;
-  flex-flow: column wrap;
-  margin: 0;
-  margin-left: 25px;
-  padding: 20px;
-  padding-top: 0;
-  background-color: white;
-  margin-bottom: 40px;
-}
-.container .dashboard .row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .mainContent {
   display: flex;
   flex-flow: row wrap;

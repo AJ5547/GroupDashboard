@@ -59,3 +59,15 @@
         border-radius: 5px;
     }
 }
+/*dashboard extension*/
+%dashboardMain {width: variables.$mainContentWidth;
+flex-flow: variables.$column;
+margin-left: 25px;
+background-color: white;
+    .row{
+        display: variables.$display;
+        flex-flow: variables.$row;
+        justify-content: space-between;
+        align-items: variables.$center;
+    }
+}
