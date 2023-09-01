@@ -13,6 +13,11 @@
 .container .navBar .logo img {
   border-radius: 20px;
 }
+.container .navBar .navBar {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
 .container .navBar .navItem {
   color: #8A8F9D;
   font-size: 100%;
@@ -92,9 +97,16 @@ body {
   background-color: #f0f3ff;
   margin: 0px;
   padding: 0px;
+  width: 50%;
 }
 .shortCard .cardLeft, .shortCard .cardRight {
+  display: flex;
+  flex-flow: column;
   margin: 15px;
+}
+.shortCard .cardLeft .cardHeading, .shortCard .cardRight .cardHeading {
+  font-size: large;
+  margin: 10px;
 }
 
 a {
