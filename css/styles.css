@@ -4,14 +4,19 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
-  height: 95vh;
+  border-radius: 20px 0 0 20px;
+  height: 100vh;
+  border-right: 1px lightgrey solid;
   margin-top: 25px;
   justify-content: space-between;
   align-items: center;
 }
 .container .navBar .logo img {
   border-radius: 20px, 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 40%;
+  margin-top: 25px;
 }
 .container .navBar .navBar {
   display: flex;
@@ -59,9 +64,10 @@
 .container .dashboard {
   width: 100%;
   flex-flow: column wrap;
-  margin: 35px 0 15px 0;
+  margin: 25px 0 15px 0;
   padding: 20px;
   background-color: white;
+  border-bottom: 1px lightgrey solid;
 }
 .container .dashboard .row {
   display: flex;

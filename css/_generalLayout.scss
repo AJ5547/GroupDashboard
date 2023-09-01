@@ -5,13 +5,17 @@
         background-color: white;
         display: flex;
         flex-direction: column;
-        border-radius: variables.$main-rounded-corners;
-        height: 95vh;
+        border-radius: 20px 0 0 20px;
+        height: 100vh;
+        border-right: variables.$main-border;
         margin-top: 25px;
         justify-content: space-between;
         align-items: center;
         .logo img {
             border-radius: variables.$main-rounded-corners, 0px;
+            object-fit: cover;
+            height: 40%;
+            margin-top: 25px;
         }
         .navBar{
             display:flex;
@@ -62,9 +66,10 @@
 %dashboardMain {
     width: variables.$hundred;
 flex-flow: variables.$column;
-margin: 35px 0 15px 0;
+margin: 25px 0 15px 0;
 padding:20px;
 background-color: white;
+border-bottom: variables.$main-border;
     .row{
         display: variables.$display;
         flex-flow: variables.$row;
