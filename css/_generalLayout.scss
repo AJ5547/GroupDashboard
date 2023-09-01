@@ -1,31 +1,32 @@
 /*side bar*/
-@use "variables";
-%sidebar {
-  width: 8%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px 0 0 20px;
-  height: 100vh;
-  border-right: variables.$main-border;
-  margin-top: 25px;
-  justify-content: space-between;
-  align-items: center;
-  .logo img {
-    border-radius: variables.$main-rounded-corners, 0px;
-    object-fit: cover;
-    height: 40%;
-    margin-top: 25px;
-  }
-  .navBar {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-  }
-  .navItem {
-    color: variables.$secondary-item-grey;
-    font-size: 100%;
-  }
+@use 'variables';
+%sidebar{
+        width: 8%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px 0 0 20px;
+        height: 100vh;
+        border-right: variables.$main-border;
+        margin-top: 25px;
+        justify-content: space-between;
+        align-items: center;
+        .logo img {
+            border-radius: variables.$main-rounded-corners, 0px;
+            object-fit: cover;
+            height: 40%;
+            margin-top: 25px;
+        }
+        .navBar{
+            display:flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+
+        }
+        .navItem {
+        color: variables.$secondary-item-grey;
+        font-size: 100%;
+    }
 }
 
 /*head nav bar. including search bar and dates*/
