@@ -16,16 +16,7 @@ width: variables.$hundred;
         @extend %sidebar;
     }
  .dashboard {
-    width: variables.$mainContentWidth;
-    flex-flow: variables.$column;
-    margin-left: 25px;
-    background-color: white;
-    .row{
-        display: variables.$display;
-        flex-flow: variables.$row;
-        justify-content: space-between;
-        align-items: variables.$center;
-    }
+   @extend %dashboardMain;
  }
 }
 .mainContent{
