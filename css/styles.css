@@ -15,7 +15,7 @@
   height: 3%;
 }
 .container .navBar .logo img {
-  border-radius: 20px, 0px;
+  border-radius: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
@@ -71,7 +71,6 @@
 /*dashboard extension*/
 .container .dashboard {
   width: 100%;
-  flex-flow: column wrap;
   margin: 0;
   margin-bottom: 25px;
   border-radius: 0px 20px 0px 0px;
@@ -81,11 +80,16 @@
 }
 .container .dashboard .row {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
   align-items: center;
   font-size: large;
   font-weight: 500;
+}
+.container .dashboard .row h2 {
+  flex-grow: 2;
+}
+.container .dashboard .row .search {
+  background-color: #EEF0F4;
+  border: none;
 }
 .container .dashboard .row .blueBorderClass {
   border-bottom: 2px #3762ED solid;
@@ -98,6 +102,11 @@
   padding-left: 20px;
 }
 
+.fa-bell {
+  margin-left: 15px;
+}
+
+/*span images*/
 body {
   margin: 0;
   padding: 0;
@@ -132,6 +141,8 @@ body {
 }
 .container .hero img {
   width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .mainContent {
@@ -150,14 +161,20 @@ body {
 
 .shortCard {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   background-color: #FFFFFF;
   margin: 0;
   padding: 0;
-  width: 70%;
+  width: 93%;
   margin-bottom: 25px;
+  border-radius: 20px;
 }
-.shortCard .cardHeading {
+.shortCard .leftAndRightCards {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardHeading {
   margin: 0;
   padding: 0;
   display: flex;
@@ -166,9 +183,36 @@ body {
   border-bottom: 1px lightgrey solid;
   justify-content: center;
 }
-.shortCard .cardLeft,
-.shortCard .cardRight {
+
+.cardLeft,
+.cardRight {
   margin: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.cardLeft img,
+.cardRight img {
+  width: 18%;
+  border-radius: 100%;
+  padding: 10px;
+  align-items: start;
+  background-color: #EEF0F4;
+}
+
+.cardLeft {
+  border-right: 1px lightgrey solid;
+}
+.cardLeft .boxHeader {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.cardRight .boxHeader {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 a {

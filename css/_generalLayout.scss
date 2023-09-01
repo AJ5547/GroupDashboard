@@ -15,7 +15,7 @@
             margin-top: 25px;
             height: 3%;
             img {
-            border-radius: variables.$main-rounded-corners, 0px;
+            border-radius:100%;
             object-fit: cover;
             height: 100%;
             }
@@ -74,7 +74,6 @@
 /*dashboard extension*/
 %dashboardMain {
   width: variables.$hundred;
-  flex-flow: variables.$column;
   margin: 0;
   margin-bottom: 25px;
   border-radius: 0px 20px 0px 0px;
@@ -84,11 +83,16 @@
   border-bottom: variables.$main-border;
   .row {
     display: variables.$display;
-    flex-flow: variables.$row;
-    justify-content: space-between;
     align-items: variables.$center;
     font-size: large;
     font-weight: 500;
+    h2 {
+    flex-grow: 2;
+    }
+    .search {
+      background-color: variables.$main-background-color;
+      border: variable.$main-border;
+    }
    .blueBorderClass {
     border-bottom: variables.$blue-border;
    }
@@ -101,3 +105,7 @@
     padding-left:20px;
 }
 }
+.fa-bell {
+  margin-left: 15px;
+}
+/*span images*/
