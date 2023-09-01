@@ -18,7 +18,10 @@ width: variables.$hundred;
  .dashboard {
     width: variables.$hundred;
     flex-flow: variables.$column;
+    margin:0;
     margin-left: 25px;
+    padding: 20px;
+    padding-top:0;
     background-color: white;
     margin-bottom:40px;
     .row{
