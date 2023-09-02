@@ -8,8 +8,7 @@ body {
   background-color: variables.$bodyBackGround;
   display: variables.$display;
   justify-content: center;
-  font-family: sans-serif;
-}
+  font-family: sans-serif;}
 .container {
     width: variables.$ninety;
   display: variables.$display;
@@ -38,13 +37,14 @@ body {
     }
     img {
         width: 80%;
+        object-fit: cover;
     }
 }
 }
 .mainContent {
   display: variables.$display;
   flex-flow: variables.$row;
-  width: 91.5%;
+  width: 91.9%;
   justify-content: variables.$center;
 }
 .left,
@@ -55,12 +55,18 @@ body {
 }
 .shortCard {
   display: variables.$display;
-  flex-flow: variables.$row;
+  flex-direction: column;
   background-color: variables.$whiteColor;
   margin: variables.$pZero;
   padding: variables.$pZero;
-  width: 70%;
+  width: 93%;
   margin-bottom: 25px; 
+ border-radius: variables.$main-rounded-corners;
+  .leftAndRightCards {
+    display: variables.$display;
+    flex-direction: row;
+  }
+}
   .cardHeading {
     margin:0;
     padding:0;
@@ -70,7 +76,11 @@ body {
       border-bottom: variables.$main-border;
       justify-content: variables.$center;
     }
+  .cardLeft,
+  .cardRight {
+    margin: 15px;
   }
+}
 a {
   text-decoration: none;
 }

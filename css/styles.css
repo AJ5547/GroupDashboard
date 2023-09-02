@@ -15,7 +15,7 @@
   height: 3%;
 }
 .container .navBar .logo img {
-  border-radius: 20px, 0px;
+  border-radius: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
@@ -71,32 +71,42 @@
 /*dashboard extension*/
 .container .dashboard {
   width: 100%;
-  flex-flow: column wrap;
   margin: 0;
   margin-bottom: 25px;
+  border-radius: 0px 20px 0px 0px;
   padding: 20px 20px 0 0;
   background-color: white;
   border-bottom: 1px lightgrey solid;
 }
 .container .dashboard .row {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
   align-items: center;
   font-size: large;
   font-weight: 500;
 }
+.container .dashboard .row h2 {
+  flex-grow: 2;
+}
+.container .dashboard .row .search {
+  background-color: #EEF0F4;
+  border: none;
+}
 .container .dashboard .row .blueBorderClass {
-  border-bottom: 1px #3762ED solid;
+  border-bottom: 2px #3762ED solid;
 }
 .container .dashboard .row .dashItem {
-  padding: 0px 20px 10px 20px;
+  padding: 0px 20px 2px 20px;
   margin: 0;
 }
 .container .dashboard .row:nth-child(1) {
   padding-left: 20px;
 }
 
+.fa-bell {
+  margin-left: 15px;
+}
+
+/*span images*/
 body {
   margin: 0;
   padding: 0;
@@ -131,12 +141,14 @@ body {
 }
 .container .hero img {
   width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .mainContent {
   display: flex;
   flex-flow: row wrap;
-  width: 91.5%;
+  width: 91.9%;
   justify-content: center;
 }
 
@@ -149,14 +161,20 @@ body {
 
 .shortCard {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   background-color: #FFFFFF;
   margin: 0;
   padding: 0;
-  width: 70%;
+  width: 93%;
   margin-bottom: 25px;
+  border-radius: 20px;
 }
-.shortCard .cardHeading {
+.shortCard .leftAndRightCards {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardHeading {
   margin: 0;
   padding: 0;
   display: flex;
@@ -164,6 +182,10 @@ body {
   width: 100%;
   border-bottom: 1px lightgrey solid;
   justify-content: center;
+}
+.shortCard .cardLeft,
+.shortCard .cardRight {
+  margin: 15px;
 }
 
 a {
@@ -176,7 +198,7 @@ a {
 }
 
 .row .blueBorderClass {
-  border-bottom: 1px #3762ED solid;
+  border-bottom: 2px #3762ED solid;
   padding: 20px;
 }
 
