@@ -32,7 +32,7 @@
   flex-direction: column;
   gap: 20px;
   margin-top: 20px;
->>>>>>> refs/remotes/origin/main
+  align-items: center;
 }
 
 /*head nav bar. including search bar and dates*/
@@ -165,10 +165,6 @@ body {
   border-bottom: 1px lightgrey solid;
   justify-content: center;
 }
-.shortCard .cardLeft,
-.shortCard .cardRight {
-  margin: 15px;
-}
 
 a {
   text-decoration: none;
@@ -182,4 +178,11 @@ a {
 .row .blueBorderClass {
   border-bottom: 1px #3762ED solid;
   padding: 20px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-between;
 }/*# sourceMappingURL=styles.css.map */

@@ -70,11 +70,7 @@ body {
       border-bottom: variables.$main-border;
       justify-content: variables.$center;
     }
-  .cardLeft,
-  .cardRight {
-    margin: 15px;
   }
-}
 a {
   text-decoration: none;
 }
@@ -89,4 +85,11 @@ a {
 .row .blueBorderClass {
 border-bottom: variables.$blue-border;
 padding: 20px;
+}
+
+.cardContainer{
+  display: variables.$display;
+  flex-flow: variables.$row;
+  justify-content: center;
+  align-content:space-between ;
 }
