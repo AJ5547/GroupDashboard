@@ -86,12 +86,9 @@
     align-items: variables.$center;
     font-size: large;
     font-weight: 500;
+    justify-content: space-between;
     h2 {
     flex-grow: 2;
-    }
-    .search {
-      background-color: variables.$main-background-color;
-      border: variable.$main-border;
     }
    .blueBorderClass {
     border-bottom: variables.$blue-border;
@@ -108,4 +105,4 @@
 .fa-bell {
   margin-left: 15px;
 }
-/*span images*/
+
