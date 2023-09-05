@@ -10,20 +10,20 @@
   justify-content: start;
   align-items: center;
 }
+.container .navBar .mainPicture {
+  display: flex;
+  flex-grow: 2;
+  align-items: end;
+  margin-bottom: 35px;
+}
 .container .navBar .logo {
   margin-top: 35px;
-  height: 8%;
 }
 .container .navBar .logo img {
   border-radius: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
-}
-.container .navBar .navBar {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
 }
 .container .navBar .navItem {
   color: #8A8F9D;
