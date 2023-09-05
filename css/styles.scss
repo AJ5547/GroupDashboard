@@ -8,7 +8,10 @@ body {
   background-color: variables.$bodyBackGround;
   display: variables.$display;
   justify-content: center;
-  font-family: sans-serif;}
+  font-family: sans-serif;
+img{
+  width:50px;
+}}
 .container {
     width: variables.$ninety;
   display: variables.$display;
@@ -78,31 +81,9 @@ body {
     }
   .cardLeft,
   .cardRight {
-    margin: 15px; 
-    display: variables.$display;
-    flex-direction: column;
-    width: 100%;
-    img {
-      width: 18%;
-      border-radius: 100%;
-      padding:10px;
-      align-items: start;
-      background-color: variables.$main-background-color;
-    }     
-}
-.cardLeft {
-  border-right: variables.$main-border;
-  .boxHeader {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-}
-.cardRight .boxHeader {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
+    margin: 15px;
+  }
+
 a {
   text-decoration: none;
 }
@@ -117,4 +98,11 @@ a {
 .row .blueBorderClass {
 border-bottom: variables.$blue-border;
 padding: 20px;
+}
+
+.cardContainer{
+  display: variables.$display;
+  flex-flow: variables.$row;
+  justify-content: center;
+  align-content:space-between ;
 }

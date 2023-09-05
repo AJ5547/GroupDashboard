@@ -11,8 +11,8 @@
   align-items: center;
 }
 .container .navBar .logo {
-  margin-top: 25px;
-  height: 3%;
+  margin-top: 35px;
+  height: 8%;
 }
 .container .navBar .logo img {
   border-radius: 100%;
@@ -88,6 +88,10 @@
 .container .dashboard .row h2 {
   flex-grow: 2;
 }
+.container .dashboard .row .search {
+  background-color: #EEF0F4;
+  border: none;
+}
 .container .dashboard .row .blueBorderClass {
   border-bottom: 2px #3762ED solid;
 }
@@ -112,6 +116,9 @@ body {
   display: flex;
   justify-content: center;
   font-family: sans-serif;
+}
+body img {
+  width: 50px;
 }
 
 .container {
@@ -197,7 +204,7 @@ body {
 }
 
 .cardLeft {
-  border-right: 1px #E4E4E9 solid;
+  border-right: 1px lightgrey solid;
 }
 .cardLeft .boxHeader {
   display: flex;
@@ -223,4 +230,11 @@ a {
 .row .blueBorderClass {
   border-bottom: 2px #3762ED solid;
   padding: 20px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-between;
 }/*# sourceMappingURL=styles.css.map */
