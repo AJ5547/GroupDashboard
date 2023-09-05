@@ -41,36 +41,6 @@
 
 /*basic flag box structure*/
 
-%matchesBox {
-  width: 90%;
-  background: white;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-  margin: 10px;
-  border-radius: variables.$main-rounded-corners;
-  .live {
-    background-color: variables.$liveBackground;
-    padding: 8px;
-    border-radius: 5px;
-    color: white;
-  }
-  .soon {
-    background-color: variables.$scoreBackground;
-    padding: 8px;
-    border-radius: 5px;
-  }
-  .live > a,
-  .soon > a {
-    text-decoration: none;
-  }
-  .score {
-    background-color: variables.$scoreBackground;
-    padding: 8px;
-    border-radius: 5px;
-  }
-}
 /*dashboard extension*/
 %dashboardMain {
   width: variables.$hundred;

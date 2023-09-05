@@ -1,5 +1,39 @@
 @use "variables";
 @use "generalLayout.scss";
+
+
+%matchesBox {
+  width: variables.$hundred;
+  height: 20vh;
+  background: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  border-radius: variables.$main-rounded-corners;
+  border: variables.$main-border;
+  .live {
+    background-color: variables.$liveBackground;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+  }
+  .soon {
+    background-color: variables.$scoreBackground;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  .live > a,
+  .soon > a {
+    text-decoration: none;
+  }
+  .score {
+    background-color: variables.$scoreBackground;
+    padding: 8px;
+    border-radius: 5px;
+  }
+}
 body {
   margin: variables.$pZero;
   padding: variables.$pZero;
@@ -105,6 +139,12 @@ img{
   }
 a {
   text-decoration: none;
+}
+.matches{
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  width:variables.$ninety;
 }
 .matchesRow {
   @extend %matchesBox;
