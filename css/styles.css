@@ -37,37 +37,6 @@
 
 /*head nav bar. including search bar and dates*/
 /*basic flag box structure*/
-.matchesRow {
-  width: 90%;
-  background: white;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-  margin: 10px;
-  border-radius: 20px;
-}
-.matchesRow .live {
-  background-color: #F53D3D;
-  padding: 8px;
-  border-radius: 5px;
-  color: white;
-}
-.matchesRow .soon {
-  background-color: #f0f3ff;
-  padding: 8px;
-  border-radius: 5px;
-}
-.matchesRow .live > a,
-.matchesRow .soon > a {
-  text-decoration: none;
-}
-.matchesRow .score {
-  background-color: #f0f3ff;
-  padding: 8px;
-  border-radius: 5px;
-}
-
 /*dashboard extension*/
 .container .dashboard {
   width: 100%;
@@ -105,6 +74,39 @@
 
 .fa-bell {
   margin-left: 15px;
+}
+
+.matchesRow {
+  width: 100%;
+  height: 20vh;
+  background: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  border-radius: 20px;
+  border: 1px #E4E4E9 solid;
+}
+.matchesRow .live {
+  background-color: #F53D3D;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+}
+.matchesRow .soon {
+  background-color: #f0f3ff;
+  padding: 8px;
+  border-radius: 5px;
+}
+.matchesRow .live > a,
+.matchesRow .soon > a {
+  text-decoration: none;
+}
+.matchesRow .score {
+  background-color: #f0f3ff;
+  padding: 8px;
+  border-radius: 5px;
 }
 
 body {
@@ -217,6 +219,13 @@ body img {
 
 a {
   text-decoration: none;
+}
+
+.matches {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 91.9%;
 }
 
 /*maybe mixin?*/
