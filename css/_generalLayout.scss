@@ -12,8 +12,8 @@
         justify-content: start;
         align-items: center;
         .logo { 
-            margin-top: 25px;
-            height: 3%;
+            margin-top: 35px;
+            height: 8%;
             img {
             border-radius:100%;
             object-fit: cover;
@@ -91,7 +91,7 @@
     }
     .search {
       background-color: variables.$main-background-color;
-      border: variable.$main-border;
+      border: variables.$main-border;
     }
    .blueBorderClass {
     border-bottom: variables.$blue-border;

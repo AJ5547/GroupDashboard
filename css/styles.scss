@@ -8,7 +8,10 @@ body {
   background-color: variables.$bodyBackGround;
   display: variables.$display;
   justify-content: center;
-  font-family: sans-serif;}
+  font-family: sans-serif;
+img{
+  width:50px;
+}}
 .container {
     width: variables.$ninety;
   display: variables.$display;
@@ -80,7 +83,7 @@ body {
   .cardRight {
     margin: 15px;
   }
-}
+
 a {
   text-decoration: none;
 }
