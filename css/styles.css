@@ -90,7 +90,7 @@
 }
 .container .dashboard .row .search {
   background-color: #EEF0F4;
-  border: none;
+  border: 1px #E4E4E9 solid;
 }
 .container .dashboard .row .blueBorderClass {
   border-bottom: 2px #3762ED solid;
@@ -172,10 +172,6 @@ body img {
   margin-bottom: 25px;
   border-radius: 20px;
 }
-.shortCard .leftAndRightCards {
-  display: flex;
-  flex-direction: row;
-}
 
 .cardHeading {
   margin: 0;
@@ -192,30 +188,31 @@ body img {
   margin: 15px;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  flex-grow: 1;
 }
-.cardLeft img,
-.cardRight img {
-  width: 18%;
-  border-radius: 100%;
-  padding: 10px;
-  align-items: start;
-  background-color: #EEF0F4;
-}
-
-.cardLeft {
-  border-right: 1px lightgrey solid;
-}
-.cardLeft .boxHeader {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-
+.cardLeft .boxHeader,
 .cardRight .boxHeader {
   display: flex;
-  justify-content: end;
   align-items: center;
+  justify-content: end;
+}
+.cardLeft .boxHeader img,
+.cardRight .boxHeader img {
+  padding-left: 10px;
+}
+.cardLeft p,
+.cardRight p {
+  display: flex;
+  align-items: start;
+}
+.cardLeft p strong,
+.cardRight p strong {
+  padding-left: 10px;
+}
+
+.cardRight {
+  border-left: 1px #E4E4E9 solid;
+  padding-left: 20px;
 }
 
 a {

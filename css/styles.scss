@@ -65,10 +65,6 @@ img{
   width: 93%;
   margin-bottom: 25px; 
  border-radius: variables.$main-rounded-corners;
-  .leftAndRightCards {
-    display: variables.$display;
-    flex-direction: row;
-  }
 }
   .cardHeading {
     margin:0;
@@ -82,8 +78,31 @@ img{
   .cardLeft,
   .cardRight {
     margin: 15px;
-  }
+    display: variables.$display;
+    flex-direction: column;
+    flex-grow: 1;
+    .boxHeader {
+      display: variables.$display;
+      align-items: center;
+      justify-content: end;
+      img {
+        padding-left: 10px;
+      }
 
+    }
+    p {
+      display: variables.$display;
+      align-items: start;
+      strong {
+        padding-left: 10px;
+      }
+    }
+
+  }
+  .cardRight {
+    border-left: variables.$main-border;
+    padding-left: 20px;
+  }
 a {
   text-decoration: none;
 }
