@@ -69,8 +69,27 @@ img{
     justify-content: space-around;
     width: 100%;
     margin-bottom: 20px;
+    .blueScroll {
+      // @include scrollBubble;
+      height: 60px;
+      width: 100%;
+      display: variables.$display;
+      justify-content: center;
+      align-items: start;
+      gap: 10px;
+      .blueCircle {
+        width: 13px;
+        height: 13px;
+        background-color: variables.$main-blue;
+        border-radius: 100%;
+        opacity: 20%;
+        }
+        .blueCircle.solidBlue {
+          opacity: 100%;
+         }
+    }
     svg{
-        height:100%;
+        height:97%;
     }
     img {
         width: 80%;
@@ -83,6 +102,7 @@ img{
   flex-flow: variables.$row;
   width: 91.9%;
   justify-content: variables.$center;
+
 }
 .left,
 .right {
