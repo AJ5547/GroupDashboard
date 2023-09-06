@@ -1,39 +1,41 @@
 @use "variables";
-@use "generalLayout.scss";
+@use "generalLayout";
 
 
-%matchesBox {
-  width: variables.$hundred;
-  height: 20vh;
-  background: white;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-  margin: 10px;
-  border-radius: variables.$main-rounded-corners;
-  border: variables.$main-border;
-  .live {
-    background-color: variables.$liveBackground;
-    padding: 8px 13px;
-    border-radius: 5px;
-    color: white;
-  }
-  .soon {
-    background-color: variables.$scoreBackground;
-    padding: 8px;
-    border-radius: 5px;
-  }
-  .live > a,
-  .soon > a {
-    text-decoration: none;
-  }
-  .score {
-    background-color: variables.$scoreBackground;
-    padding: 8px;
-    border-radius: 5px;
+
+
+/*mixins*/
+/*hero mixen*/
+@mixin scrollBubble(){
+  .blueCircle {
+    width: 13px;
+    height: 13px;
+    background-color: variables.$main-blue;
+    border-radius: 100%;
+    opacity: 20%;
+    }
+    .blueCircle.solidBlue {
+      opacity: 100%;
+     }
+}
+/*matches row p mixin*/
+@mixin eyePadding($display, $eyeGap: 10px){
+  display: variables.$display;
+ flex-direction: row;
+ gap: $eyeGap;
+}
+
+@mixin sectionBoxFormating(){
+  .boxHeader {
+    display: variables.$display;
+    align-items: center;
+    justify-content: end;
+    img {
+      padding-left: 10px;
+    }
   }
 }
+
 body {
   margin: variables.$pZero;
   padding: variables.$pZero;
@@ -70,23 +72,14 @@ img{
     width: 100%;
     margin-bottom: 20px;
     .blueScroll {
-      // @include scrollBubble;
+      @include scrollBubble;
       height: 60px;
       width: 100%;
       display: variables.$display;
       justify-content: center;
       align-items: start;
       gap: 10px;
-      .blueCircle {
-        width: 13px;
-        height: 13px;
-        background-color: variables.$main-blue;
-        border-radius: 100%;
-        opacity: 20%;
-        }
-        .blueCircle.solidBlue {
-          opacity: 100%;
-         }
+
     }
     svg{
         height:97%;
@@ -135,15 +128,7 @@ img{
     display: variables.$display;
     flex-direction: column;
     flex-grow: 1;
-    .boxHeader {
-      display: variables.$display;
-      align-items: center;
-      justify-content: end;
-      img {
-        padding-left: 10px;
-      }
-
-    }
+    @include sectionBoxFormating();
     p {
       display: variables.$display;
       align-items: start;
@@ -169,16 +154,10 @@ a {
 .matchesRow {
   @extend %matchesBox;
   p {
-    // @include eyePadding;
-    display: variables.$display;
-    flex-direction: row;
-    gap: 10px;
-    
-  }
+    @include eyePadding(variables.$display, 10px); 
+    }
 }
-/*maybe mixin?*/
 .dashItem .active {
-  
   color: variables.$main-blue;
 }
 .row .blueBorderClass {
