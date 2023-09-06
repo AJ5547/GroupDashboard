@@ -15,7 +15,7 @@
   border: variables.$main-border;
   .live {
     background-color: variables.$liveBackground;
-    padding: 8px;
+    padding: 8px 13px;
     border-radius: 5px;
     color: white;
   }
@@ -168,6 +168,13 @@ a {
 }
 .matchesRow {
   @extend %matchesBox;
+  p {
+    // @include eyePadding;
+    display: variables.$display;
+    flex-direction: row;
+    gap: 10px;
+    
+  }
 }
 /*maybe mixin?*/
 .dashItem .active {
